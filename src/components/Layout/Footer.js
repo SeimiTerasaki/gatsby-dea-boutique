@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-Link'
+import Link from 'gatsby-link'
 import {Container, Row, Col } from 'react-bootstrap';
 
 import Payments from '../../images/payments.png';
