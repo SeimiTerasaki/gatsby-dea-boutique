@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:wght@400;700&family=Raleway:wght@800&family=Old+Standard+TT&display=swap);
+
+.cart .row{
+        padding: 30px 0 10px 0; 
+}
+.cart-header{
+    border-bottom: 2px solid #555;
+}
+
+.cart-h {
+    font-family: Tahoma, sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+ }
+
+.cart-title{
+    padding: 20px 0px;
+}
+
+.cart-item-row{
+    border-bottom: 1px solid #efefef;
+}
+
+.cart-item-sub{
+    font-weight: 700;
+}
+
+.cart-btn{
+    width: 50%;
+    a{
+        color: #fff;
+    }
+}
+
+.cart-item-edit{
+    bottom: 0;
+    position:absolute;
+
+    .horizontal{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.cart-item-price{
+    bottom: 0;
+    right: 0;
+    position:absolute;
+}
+
+.modal-content{
+    border-radius: 0px;
+}
+
+.modal-p{
+    font-size: 13px;
+}
+

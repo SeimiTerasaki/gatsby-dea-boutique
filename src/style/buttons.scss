@@ -1,0 +1,177 @@
+.btn{
+    border-radius: 0px !important;
+    &:focus{
+      box-shadow: none !important;
+    }
+}
+
+.btn-outline-dark {
+    border-color: #212529;
+    color: #212529;
+
+    &:hover{
+        color: #999!important;
+        background-color: transparent !important;
+        border-color: #212529 !important;
+    }
+
+    &:active{
+        background-color: transparent !important;
+        border-color: #212529 !important;
+        color: #999!important;
+        }
+  
+    a{
+      &:hover{
+        color: #212529!important;
+        background-color: transparent !important;
+      }
+  
+        &:active{
+        background-color: transparent !important;
+        border-color: #212529 !important;
+        color: #999!important;
+        }
+    
+        &:hover{
+        background-color: transparent !important;
+        border-color: #212529 !important;
+        color: #999!important;
+        }
+    }
+}
+
+.category-btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:active{
+        background-color: #fff !important;
+        border: 1px solid #fff !important;
+        color: #212529 !important;
+    }
+    &:hover{
+        background-color: #fff !important;
+        border: 1px solid #fff !important;
+        color: #212529 !important;
+    }
+
+    a{
+        color: #fff;
+        &:hover{
+        background-color: #fff;
+        color: #212529;
+        border: 1px solid #fff;
+        }
+    }
+}
+
+.cart-btn{
+    width: 50%;
+    a{
+        color: #fff;
+    }
+}
+
+.edit-btn{
+    color: #212529;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    font-size: 12px;
+    border-bottom: 1px solid #212159;
+    margin: 0 5px;
+
+    &:hover{
+        color: #212529;
+        border-color:  #ccc !important;
+        background-color: #fff  !important;
+    }
+
+    &:active{
+        border-color:  #ccc !important;
+        background-color: #fff  !important;
+        color: #212529 !important;
+    }
+    &:focus
+    {
+        border-color:  #ccc !important;
+        background-color: #fff  !important;
+        color: #212529 !important;
+    }
+
+    a{
+        color: #212529;
+        &:hover{
+            color: #212529;
+        }
+    }
+}
+
+.sort-btn{
+    color: #212529;
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+  
+    &:hover{
+        color: #212529;
+        border-color:  #ccc !important;
+        background-color: #fff  !important;
+    }
+  
+    &:active{
+        border-color:  #ccc !important;
+        background-color: #fff  !important;
+        color: #212529 !important;
+    }
+    &:focus
+    {
+        border-color:  #ccc !important;
+        background-color: #fff  !important;
+        color: #212529 !important;
+    }
+  
+    a{
+        color: #212529;
+        &:hover{
+            color: #212529;
+        }
+    }
+  }
+
+  .show > .btn-secondary.dropdown-toggle {
+    color: #212529;
+    border-color:  #ccc !important;
+    background-color: #fff  !important;
+  }
+  
+  .dropdown-item{
+    padding: 2px 10px;
+  
+    &:hover,
+    &:active{
+        background-color: #efeff0;
+        color: #212529
+    }
+  }
+
+  .full-width{
+    width: 100%;
+    background-color: #555;
+    border: 1px solid #212529;
+    color: #fff;
+
+    &:active{
+        background-color: #999 !important;
+        border: 1px solid #999 !important;
+      }
+  
+    &:hover{
+      background-color: #999;
+      border: 1px solid #999;
+    }
+  }

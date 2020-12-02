@@ -1,0 +1,133 @@
+
+@media screen and (min-width: 769px) {
+    .navbar-toggle{
+      display: none;
+    }
+    .carousel-item{
+        height: 700px;
+    }
+    .cart-item-sub{
+        .multiply,
+        .subtotal{
+            float:right;
+        }
+    }
+  }
+
+  
+
+
+@media screen and (min-width: 576px){
+    .modal-dialog {
+        margin-right: 20px;
+        margin-top: 50px;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1080px) {
+    .carousel-item{
+        height: 500px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .navbar-toggle{
+      display: block!important;
+      margin-top: .3rem;
+    }
+    .icons{
+      margin-left: auto;
+      flex-direction:row;
+    }
+    .fi-icons{
+      font-size: 15px!important;
+    }
+    .flex-mobile-nav{
+      padding-top: 9vh;
+    }
+    .carousel-item{
+        height: 300px;
+    }
+    .brands{
+        p{
+            font-size: 25px;
+        }
+    }
+  .cart-item-filler{
+
+    .item-name{
+        font-size: 15px;
+    }
+    
+    .item-quantity,
+    .item-price{
+        display: none;
+    }
+  }
+  .search-results{
+    width: 88%;
+  }
+}
+
+  @media screen and (max-width: 576px){
+      .nodisplay-xs{
+          display:none !important;
+      }
+}
+  
+  @media screen and (max-width: 480px) {
+    .navbar-mobile-item,
+    .navbar{
+      padding: 1rem .5rem 0 .5rem !important;
+      height: 70px !important;
+    }
+    .Promotion{
+      font-size:10px!important;
+    }
+    .icons{
+      margin-left: auto;
+    }
+    .brands p {
+        font-size: 15px;
+    }
+    h3,h4,h5{
+        font-size:18px;
+    }
+    .cart-btn {
+      width: auto;
+      a{
+        font-size: 15px;
+      }
+  }
+  .cart-item-edit{
+    position: relative;
+  }
+
+  .cart-item-sub{
+    float: right;
+  }
+
+  .padding-xs{
+    padding-right: 10px;
+  }
+  .col-2,
+  .cart-item-filler{
+      padding-left: 0;
+  }
+
+  .cart .row {
+    padding: 10px 0 10px 0;
+  }
+  .item-name,
+  .edit-btn{
+    font-size: 12px;
+    a{
+      font-size: 12px !important;
+    }
+  }
+  .search-results{
+    width: 85%;
+  }
+  
+}

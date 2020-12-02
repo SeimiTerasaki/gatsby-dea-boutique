@@ -1,90 +1,174 @@
-.Header {
-  background: #663399;
-  color: white;
-  border-bottom: 3px solid white;
-  box-shadow: 0 16px 0 black;
-  transform: rotateZ(8deg) skew(-2deg, -10deg) translateY(-10%);
-  margin: 50px;
+
+.navbar{
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
-.Header__body {
-  display: flex;
-  align-items: center;
+.navbar-brand{
+  font-size: 25px;
 }
 
-.Header__title {
-  flex: 1;
-  padding: 20px 0;
-  font-family: "times new roman", times, serif;
-  font-style: italic;
-
-  a {
-    font-size: 6em;
-    font-weight: bold;
-    position: relative;
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 2px;
-
-    &:after, &:before {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      color: white;
-      background: #663399;
-      overflow: hidden;
-      clip: rect(0,900px,0,0);
-      display: block;
-      padding: 2px;
-    }
-
-    &:after {
-      left: 3px;
-      text-shadow: -2px 0 red;
-      animation: noise-anim 2s infinite linear alternate-reverse;
-    }
-
-    &:before {
-      content:attr(data-text);
-      left: -3px;
-      text-shadow: 2px 0 blue;
-      animation: noise-anim-2 3s infinite linear alternate-reverse;
-    }
+.navbar-brand a{
+  font-family: 'Abril Fatface', cursive;
+  color: #212529;
+  &:hover{
+    color:#999;
   }
 }
 
-.Header__summary {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  cursor: pointer;
+.nav-item,
+.navbar-mobile-item {  
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
 
+.icons{
+    align-items: center !important;
+}
+
+.mb-3{
+  margin-bottom: -25px !important;
+  border-radius: 0px;
+}
+
+.search-bar{
+  &:focus{
+    box-shadow: none;
+    border-color: #ced4da;
+    border-radius: 0px !important;
+  }
+}
+
+.input-group-text{
+  border-radius: 0px !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-results{
+  position:absolute;
+  z-index:1000;
+  border-radius: 0 !important;
+}
+
+.nav-link{
+  padding: 0;
+}
+
+.dropdown-menu{
+  top: 180%;
+  left: 0;
+}
+
+#basic-nav-dropdown{
+  color: #212529;
+}
+
+.dropdown-item{
   &:hover {
-    text-decoration: underline;
+    color: #999;
+    text-decoration: none!important;
+    background-color: #fff;
+  }
+
+}
+
+.nav-item{
+  margin: 0 10px 0 4px;
+  cursor:pointer;
+  text-transform: uppercase;
+  a{
+    color: #212529;
+    &:hover {
+    color: #999;
+    text-decoration: none!important;
+  }
   }
 }
 
-.Header__summary__line {
-  font-size: 0.8em;
+.fi-icons{
+  color: #212529;
+  font-size: 20px;
+  &:hover {
+    color: #999;
+  }
 }
-
-@keyframes noise-anim {
-  $steps: 20;
-
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      clip:rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
+.navbar-toggle{
+  background-color: transparent;
+  border: none;
+  &:focus{
+    border: none;
+    outline:none;
+    color: #999;
   }
 }
 
-@keyframes noise-anim-2 {
-  $steps: 20;
+.nav-toggle-icon{
+  font-size: 25px;
+  color:#212529;
 
-  @for $i from 0 through $steps{
-    #{percentage($i * (1/$steps))}{
-      clip:rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
+  &:hover{
+    color: #999;
+    
   }
 }
+
+.isHidden{
+  height: 0px;
+  transition: height 1s;
+}
+
+.isShown{
+  height: 100vh;
+  max-height: 1500px;
+  transition: height 1s;
+}
+
+#navbar-mobile{
+  background-color: #fff;
+  position: absolute;
+  z-index: 888;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flex-column > .container{
+  padding: 0!important;
+}
+
+.navbar-mobile-item{
+  position: relative;
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid #F5F5F5;
+  &:hover {
+    color: #999;
+  }
+}
+
+.mobile-nav-icon{
+  float:right;
+}
+
+.swipe-nav{
+  overflow: hidden;
+  display: block;
+  top:0;
+  background-color: #fff;
+  padding-top: 2vh;
+}
+
+#noWidth{
+  width: 0px;
+  display: none;
+  transition: width 2s;
+}
+
+#swipeRight{
+  width: 100%;
+  transition: width 2s;
+  position: absolute;
+  z-index: 1000;
+}
+
