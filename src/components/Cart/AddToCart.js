@@ -44,8 +44,11 @@ const AddToCart = ({id, slug, imageSizes, name, price}) => {
             <Col xs={6} s={6} md={6} lg={6} xl={6} className="modal-p">
               <p>{name}</p>
               <p>€{price}</p>
-              <Button className="edit-btn" aria-label="add-item"><Link to={`/product/${slug}`} aria-label="add-item"><FiEdit3/> Edit</Link></Button>|
+              <Button className="edit-btn" aria-label="add-item"><Link to={`/product/${slug}`}><FiEdit3/> Edit</Link></Button>|
                <RemoveFromCart variantId={id}/>
+            </Col>
+            <Col xs={12} s={12} md={12} lg={12} xl={12}>
+              <Button className="modal-checkout" aria-label="checkout"><Link to={`/cart`}>Checkout</Link></Button>
             </Col>
           </Row>
         </Modal.Body>
